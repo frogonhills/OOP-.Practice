@@ -30,6 +30,7 @@ class Developer(Employee):
         super().__init__(first , last , pay)
         self.prog_lang = prog_lang
 
+#manager er under e jara thake tara holo supervisor  amra developer der or employee der as a supervisor hishabe add korbo 
 
 
 
