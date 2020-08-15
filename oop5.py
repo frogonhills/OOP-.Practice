@@ -31,9 +31,18 @@ class Employee:
         return '{} , {}'.format(self.fullName(), self.email)
 
 
+
+
+    def __add__(self , other):
+        return self.pay + other.pay
+
+
 emp_1 = Employee('rakib' , 'hossain' , 50000 )
 emp_2 = Employee('mofiz' , 'faruk' , 20000)
 
 print(emp_1.__repr__())
 print(emp_1.__str__())
 print(emp_1)
+
+
+print(emp_1 + emp_2) # __add__() chara eta cholbe na karon duita object jog kora jay na 
